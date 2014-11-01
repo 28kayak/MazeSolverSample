@@ -1,4 +1,4 @@
-
+import java.awt.Color;
 public class Room
 {
 	int locationx;
@@ -8,6 +8,7 @@ public class Room
 	Room east;
 	Room south;
 	Room west;
+	Color floorCol;
 	
 	void setLocx(int locationx)
 	{
@@ -17,7 +18,7 @@ public class Room
 	{
 		this.locationy = locationy;
 	}
-	int[] getRoomLocation(int roomid)
+	int[] getLocationbyRoom(int roomid)
 	{
 		int[] coordinate = new int[2];
 		coordinate[0] = this.locationx;
@@ -37,6 +38,12 @@ public class Room
 		}
 		return returnedID;
 	}
+	void changeColor()
+	{
+		floorCol = Color.MAGENTA;
+	}
+	
+	
 	
 	
 	int getLocx()
