@@ -26,7 +26,16 @@ public class Room
 	}
 	int getRoombyLocation(int locationx, int locationy)
 	{
-		
+		int returnedID;
+		if(this.locationx == locationx && this.locationy == locationy)
+		{
+			returnedID = this.roomId;
+		}
+		else
+		{
+			returnedID = -1;
+		}
+		return returnedID;
 	}
 	
 	
