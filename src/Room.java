@@ -46,6 +46,7 @@ public class Room
 	
 	
 	
+	
 	int getLocx()
 	{
 		return locationx;
