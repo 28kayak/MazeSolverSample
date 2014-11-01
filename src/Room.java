@@ -18,6 +18,22 @@ public class Room
 	{
 		this.locationy = locationy;
 	}
+	void setNorthRoom(Room north)
+	{
+		this.north = north;
+	}
+	void setEastRoom(Room east)
+	{
+		this.east = east;
+	}
+	void setWestRoom(Room west)
+	{
+		this.west = west;
+	}
+	void setSouthRoom(Room south)
+	{
+		this.south = south;
+	}
 	int[] getLocationbyRoom(int roomid)
 	{
 		int[] coordinate = new int[2];
